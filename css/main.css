@@ -240,3 +240,62 @@ li.linkbox{
 	display: inline;
 	margin: 2em 0;
 }
+
+/*---------------------------------
+PUBPICKER STYLES
+---------------------------------*/
+#pub-intro{
+	background-image: url("../img/york-map-dark.jpg");
+	/* Full height */
+	height: 80%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	text-align: center;
+}
+h1.pub{
+	font-family: "Montserrat", sans-serif;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: 8vw;
+	font-weight: 700;
+	text-shadow: 5px 5px 50px #000000;
+	margin: 0;
+	padding: 0.2em 0;
+	width: 100%;
+	position: absolute;
+	top: 30%;
+	z-index: 597;
+}
+button.pub-search{
+	background-color: #ffffff;
+	padding: 1em;
+	font-family: "Montserrat", sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #2e2e2e;
+	font-size: 1vw;
+	border: 0;
+	box-shadow: 5px 5px 20px #2e2e2e;
+	width: auto;
+	margin: 20% auto;
+	z-index: 999;
+	position: absolute;
+
+}
+.footer-pub{
+	background-color: #315686;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: #ffffff;
+	font-family: "Montserrat", sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+p.footer-pub{
+	height: auto;
+	padding: 0;
+}

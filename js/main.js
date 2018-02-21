@@ -43,3 +43,12 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+//Pub picker JavaScript
+
+function myPub() {
+	var pubNames = ["Eagle & Child", "Wonkey Donkey", "The Gillygate", "Minster Inn", "Guy Fawkes", "Lamb & Lion", "Sutlers", "Fossgate Social", "The Hop", "The Phoenix", "Pavement Vaults", "The Habit", "Rose & Crown", "Black Swan", "White Swan", "Brigantes", "The Falcon Tap", "Brewdog"];
+	var random = pubNames[Math.floor(Math.random() * pubNames.length)];
+		
+	document.getElementById("where").innerHTML = random;
+}
