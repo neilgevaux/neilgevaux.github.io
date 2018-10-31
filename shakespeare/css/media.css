@@ -1,6 +1,6 @@
-/* When the screen is less than 840px pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/* When the screen is less than 840px pixels wide, hide all links. Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 840px) {
-  .topnav a {display: none;} /* .topnav a:not(:first-child) {display: none;} */
+  .topnav a{display: none;}
   .topnav a.icon {
     float: right;
     display: block;
@@ -13,7 +13,7 @@
 @media screen and (max-width: 840px) {
   topnav,.topnav.responsive {
     position: relative;
-    background-color: #1D1F2B;
+    background-color: #2e2e2e;
   }
   .topnav.responsive a.icon {
     position: absolute;
@@ -28,33 +28,17 @@
     text-align: left;
     color: #ffffff;
   }
-}
-/* Main content */
-	#content{
-		height: auto;
-		width: 100%;
-		padding: 5%;
-	}
-	li.linkbox{
-		display: block;
-		margin: 2em 0;
-	}
+
 }
 
-@media screen and (max-width: 600px) {
-	h1.intro{
-    font-size: 20vw;
-	top: 30%;
-  }
-  h2.intro{
-    font-size: 8vw;
-	top: 50%;
-  }
-  h3.intro{
-    font-size: 6vw;
-  }
-  .share-buttons a {
-	color: #ffffff;
-	font-size: 6vw;
+ /*------------------------------------
+SECTIONS
+------------------------------------*/
+@media screen and (max-width: 840px) {
+	.topnav{
+		padding: 1em;
+	}
+	.topnav.active{
+		padding: 1em;
 	}
 }

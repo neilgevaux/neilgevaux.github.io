@@ -1,5 +1,5 @@
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function navBar() {
+function myFunction() {
     var responsive = document.getElementById("topNav");
     if (responsive.className === "topnav") {
         responsive.className += " responsive";
@@ -8,13 +8,34 @@ function navBar() {
     }
 }
 
-/* Make nav background change colour on scroll */
+
+/* Make nav background change colour, and logo fade out on scroll */
 $(window).on("scroll", function() {
 	if($(window).scrollTop() > 50) {
-		$(".topnav,h1.intro").addClass("active"); //adds the active class to topnav
+		$(".topnav,h1.intro,h2.intro").addClass("active"); //adds the active class to topnav and banner logo
 	} else {
 		//remove the background property so it becomes transparent again, defined in main.css
-		$(".topnav,h1.intro").removeClass("active");
+		$(".topnav,h1.intro,h2.intro").removeClass("active");
+	}
+});
+
+// Shrink logo on scroll 
+$(window).on("scroll", function() {
+	if($(window).scrollTop() > 50) {
+		$("img.logo").addClass("active"); //adds the active class to topnav and banner logo
+	} else {
+		//remove the background property so it becomes transparent again, defined in main.css
+		$("img.logo").removeClass("active");
+	}
+});
+
+//Make information tiles appear
+$(window).on("scroll", function() {
+	if($(window).scrollTop() > 600) {
+		$(".info-tiles").addClass("active"); //adds the active class to topnav and banner logo
+	} else {
+		//remove the background property so it becomes transparent again, defined in main.css
+		$(".info-tiles").removeClass("active");
 	}
 });
 
@@ -43,11 +64,3 @@ $(document).ready(function(){
   });
 });
 
-//Pub picker JavaScript
-
-function myPub() {
-	var pubNames = ["Eagle & Child", "Wonkey Donkey", "The Gillygate", "Minster Inn", "Guy Fawkes", "Lamb & Lion", "Sutlers", "Fossgate Social", "The Hop", "The Phoenix", "Pavement Vaults", "The Habit", "Rose & Crown", "Black Swan", "White Swan", "Brigantes", "The Falcon Tap", "Brewdog"];
-	var random = pubNames[Math.floor(Math.random() * pubNames.length)];
-		
-	document.getElementById("where").innerHTML = random;
-}
