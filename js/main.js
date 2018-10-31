@@ -1,5 +1,5 @@
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
+function navBar() {
     var responsive = document.getElementById("topNav");
     if (responsive.className === "topnav") {
         responsive.className += " responsive";
@@ -7,7 +7,6 @@ function myFunction() {
         responsive.className = "topnav";
     }
 }
-
 
 /* Make nav background change colour on scroll */
 $(window).on("scroll", function() {
