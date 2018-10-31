@@ -1,3 +1,6 @@
+* {
+	box-sizing: border-box;
+}
 html, body{
 	margin: 0;
 	font-size: 16px;
@@ -7,7 +10,15 @@ h1,h2,h3,h4,h5,h6{
 	font-family: "Montserrat", sans-serif;
 	color: #2d2d2d;
 	text-transform: uppercase;
+}
+h1{
 	font-size: 3em;
+}
+h2{
+	font-size: 2.5em;
+}
+h3{
+	font-size: 2em;
 }
 p{
 	font-family: "Lora", serif;
@@ -29,6 +40,12 @@ ul,li{
 	font-size: 20px;
 	line-height: 2em;
 	color: #2e2e2e;
+}
+header{
+	width: 100%;
+	height: auto;
+	position: fixed;
+	z-index: 999;
 }
 /*-----------------
 NAVBAR
@@ -71,6 +88,19 @@ NAVBAR
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
     display: none;
+}
+/* Hamburger menu icon for responsive nav */
+.hamburger-container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
 }
 #wrapper{
 	height: 100%;
@@ -153,33 +183,34 @@ h3.intro{
 	bottom: 1px;
 }
 /* Styles for main content sections */
-.content{
+#content{
 	height: auto;
-	width: 50%;
+	width: 100%;
 	margin: 0 auto;
-	padding: 10em 0;
-	text-align: center;
+	padding: 10% 20%;
+	background-color: #fafafa;
 }
 /* Styles for project content section */
-.project-content{
+#project-content{
 	height: auto;
 	width: 100%;
 	margin: 0 auto;
 	padding: 10em 0;
 	text-align: center;
-	background-color: #FFF8F7;
+	background-color: #ffffff;
 }
-.contact-content{
+#contact-content{
 	height: auto;
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
-	padding: 10em 0;
+	padding: 10%;
 	text-align: center;
+	background-color: #fafafa;
 }
 /* Holders for website portfolio */
 .web-tile{
 	height: 100%;
-	background-color: #7292BB;
+	background-color: #eeeeee;
 	margin: 1em;
 	padding:1em;
 	color: #ffffff;
@@ -199,32 +230,34 @@ h3.web-tile{
 	margin:0;
 	font-size:2em;
 	height: auto;
+	color: #2e2e2e;
 }
 	
 p.web-tile-text{
-	color: #ffffff;
+	color: #000000;
 	font-size:1em;
 	}
 a.web-tile-link{
-	background-color: #FFD693;
+	/* background-color: #DCE5F1; */
 	margin: 1em;
 	padding: 1em;
-	color: #315686;
+	color: #2e2e2e;
 	font-family: "Montserrat", sans-serif;
 	font-weight: bold;
 	font-size: 0.8em;
 	text-transform: uppercase;
+	border: 1px solid #2e2e2e;
 }
 a.web-tile-link:hover{
-	background-color: #F0BC69;
+	background-color: #2e2e2e;
 	padding: 1.2em;
 	transition: ease-in-out 0.2s;
-	color: #0C2D58;
+	color: #ffffff;
 	box-shadow: 1px 1px 20px #0C2D58;
 }
 
 .footer{
-	background-color: #315686;
+	background-color: #000811;
 	width:100%;
 	height: 5em;
 	text-align: center;
@@ -239,63 +272,4 @@ p.footer{
 li.linkbox{
 	display: inline;
 	margin: 2em 0;
-}
-
-/*---------------------------------
-PUBPICKER STYLES
----------------------------------*/
-#pub-intro{
-	background-image: url("../img/york-map-dark.jpg");
-	/* Full height */
-	height: 80%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	position: relative;
-	text-align: center;
-}
-h1.pub{
-	font-family: "Montserrat", sans-serif;
-	text-transform: uppercase;
-	color: #ffffff;
-	font-size: 8vw;
-	font-weight: 700;
-	text-shadow: 5px 5px 50px #000000;
-	margin: 0;
-	padding: 0.2em 0;
-	width: 100%;
-	position: absolute;
-	top: 30%;
-	z-index: 597;
-}
-button.pub-search{
-	background-color: #ffffff;
-	padding: 1em;
-	font-family: "Montserrat", sans-serif;
-	text-transform: uppercase;
-	font-weight: bold;
-	color: #2e2e2e;
-	font-size: 1vw;
-	border: 0;
-	box-shadow: 5px 5px 20px #2e2e2e;
-	width: auto;
-	margin: 20% auto;
-	z-index: 999;
-	position: absolute;
-
-}
-.footer-pub{
-	background-color: #315686;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	color: #ffffff;
-	font-family: "Montserrat", sans-serif;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-p.footer-pub{
-	height: auto;
-	padding: 0;
 }

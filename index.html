@@ -15,8 +15,8 @@
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,Anton" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700,Anton" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
     <link href="css/main.css" rel="stylesheet">
@@ -24,7 +24,7 @@
 	<link href="css/cols.css" rel="stylesheet">
 
 	<!-- jQuery latest -->
-    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 	<!-- Scripts -->
 	<script src="js/main.js"></script>
 	<script src="js/jquery.matchHeight.js"></script>
@@ -71,18 +71,32 @@ jQuery(function($){
         var first = "info";
         var last = "neigle.com";
 		</script>
+		<script>
+			function xBar(x) {
+			x.classList.toggle("change");
+			}
+		</script>
 
 </head>
 
 <body>
+<header>
 	<!-- Top banner -->
 		<nav class="topnav" id="topNav">
 			<a href="index.html">Home</a>
 			<a href="#about">About</a>
 			<a href="#projects">Projects</a>
 			<a href="#contact">Contact</a>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+			<a href="javascript:void(0);" class="icon" onclick="navBar()">
+						<div class="hamburger-container" onclick="xBar(this)">
+						  <div class="bar1"></div>
+						  <div class="bar2"></div>
+						  <div class="bar3"></div>
+						</div>
+					</a>
+				</nav>
 		</nav>
+</header>
 	<!-- Wrapper div -->
 	<div id="wrapper">
 	
@@ -101,13 +115,13 @@ jQuery(function($){
 		
 		<span class="anchor" id="about"></span>
 		
-		<div class="content">
+		<div id="content">
 			<!-- About Section -->
 			
 			<section id="about" class="">
                 <h2>About Neigle</h2>
                 <p>I work at the <a href="http://www.york.ac.uk" alt="The University of York" target="_blank">University of York</a> as the Computing Officer for the <a href="http://www.york.ac.uk/archaeology" alt="Department of Archaeology, University of York" target="_blank">Archaeology Department</a>. I look after the IT for the department, build PCs, and work on archaeological projects like <a href="http://www.starcarr.com" alt="Star Carr, a Mesolithic site in North Yorkshire" target="_blank">Star Carr</a> and <a href="http://www.sicilyintransition.org/" alt="Sicily in Transition-Exploring the Archaeology of Regime Change" target="_blank">Sicily in Transition</a>.</p>
-                <p>I also build websites for projects and businesses. I love front-end web development, and I'm trying to get good at it. Have a look in the <a href="#projects">Projects</a> section to check out some of my work. You'll also find some examples of artefact photography that I've taken.</p>
+                <p>I also build websites for projects and businesses. I love front-end web development and UX. Have a look in the <a href="#projects">Projects</a> section to check out some of my work. You'll also find some examples of artefact photography that I've taken.</p>
                 <p>I'm involved in 3D modelling of objects too. I use photogrammetry to make visualisations of archaeological objects. Check them out at <a href="https://www.sketchfab.com/neilgevaux" target="_blank">Sketchfab</a>. I wrote a manual on the process of creating a model using <a href="http://www.agisoft.com/" alt="Agisoft Photoscan" target="_blank">Agisoft Photoscan</a>.</p>
 			</section>
 		</div>
@@ -115,8 +129,9 @@ jQuery(function($){
 		<span class="anchor" id="projects"></span>
 		
 		<!-- Projects Section -->
-		<div class="project-content">
-		<h1>Projects</h1>
+		<div id="project-content">
+		<h2>Projects</h2>
+		<h3>Websites</h3>
 			<div class="section group">
 				<div class="col span_1_of_3 matchheight">
 					<div class="web-tile">
@@ -129,7 +144,7 @@ jQuery(function($){
 				<div class="col span_1_of_3 matchheight">
 					<div class="web-tile">
 						<h3 class="web-tile">Sicily In Transition</h3>
-						<a href="http://www.sicilyintransition.org/" title="" target="_blank"><img class="web-tile" src="img/websites/website02.jpg"></a>
+						<a href="http://www.sicilyintransition.org/" title="" target="_blank"><img class="web-tile" src="img/websites/website02.png"></a>
 						<p class="web-tile-text">An archaeological project tracing regime change in Sicily.</p>
 						<p><a class="web-tile-link" href="http://www.sicilyintransition.org/" role="button" target="_blank">View live site &raquo;</a></p>
 					</div>
@@ -137,9 +152,9 @@ jQuery(function($){
 				<div class="col span_1_of_3 matchheight">
 					<div class="web-tile">
 						<h3 class="web-tile">Karmilla</h3>
-						<a class="web-tile-text"href="http://www.karmillamusic.com/" title="" target="_blank"><img class="web-tile" src="img/websites/website03.jpg"></a>
+						<a class="web-tile-text"href="http://www.neigle.com/karmilla/" title="" target="_blank"><img class="web-tile" src="img/websites/website03.jpg"></a>
 						<p class="web-tile-text">Site created for UK-based singer-songwriter <em>Karmilla</em>.</p>
-						<p><a class="web-tile-link" href="http://www.karmillamusic.com/" role="button" target="_blank">View live site &raquo;</a></p>
+						<p><a class="web-tile-link" href="http://www.neigle.com/karmilla/" role="button" target="_blank">View live site &raquo;</a></p>
 					</div>
 				</div>
 			</div>
@@ -156,21 +171,31 @@ jQuery(function($){
 				<div class="col span_1_of_3 matchheight">
 					<div class="web-tile">
 						<h3 class="web-tile">Third Lung</h3>
-						<a class="web-tile-text"href="http://www.thirdlungband.com/" title="" target="_blank"><img class="web-tile" src="img/websites/website05.jpg"></a>
-						<p class="web-tile-text">UK 5-piece band <em>Third Lung</em>.</p>
+						<a class="web-tile-text"href="http://www.thirdlungband.com/" title="" target="_blank"><img class="web-tile" src="img/websites/website05.png"></a>
+						<p class="web-tile-text">UK 4-piece band <em>Third Lung</em>.</p>
 						<p><a class="web-tile-link" href="http://thirdlungband.com/" target="_blank" role="button">View live site &raquo;</a></p>
+                    </div>
+				</div>
+				<div class="col span_1_of_3 matchheight">
+					<div class="web-tile">
+						<h3 class="web-tile">INDUCE</h3>
+						<a class="web-tile-text"href="http://www.neigle.com/induce/" title="" target="_blank"><img class="web-tile" src="img/websites/website06.png"></a>
+						<p class="web-tile-text">ERC funded archaeological project about the use of ceramics.</p>
+						<p><a class="web-tile-link" href="http://www.neigle.com/induce/" target="_blank" role="button">View live site &raquo;</a></p>
                     </div>
 				</div>
 			</div>
 		</div>
 		
+		<!-- <h3>Photography</h3> -->
+		
 		<span class="anchor" id="contact"></span>
 		
 		 <!-- Contact Section -->
-		<div class="contact-content">
+		<div id="contact-content">
 			<section id="contact" class="">
 				<h2>Contact Me</h2>
-				<p>Drop me a line if you share any interests, or indeed if you'd like to work with me.</p>
+				<p>Drop me a line if you share any interests, or if you think you have a project you want me to work on.</p>
 				<p><script type="text/javascript">document.write('<a href="mailto:'+first + '@' + last+'">'+first + '@' + last+'<\/a>');</script></a>
 				</p>
 				<ul>
