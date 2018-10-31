@@ -47,12 +47,6 @@ header{
 	position: fixed;
 	z-index: 999;
 }
-header{
-	width: 100%;
-	height: auto;
-	position: fixed;
-	z-index: 999;
-}
 /*-----------------
 NAVBAR
 ------------------*/
@@ -100,10 +94,6 @@ NAVBAR
     display: inline-block;
     cursor: pointer;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> master
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
@@ -111,7 +101,6 @@ NAVBAR
     margin: 6px 0;
     transition: 0.4s;
 }
-<<<<<<< HEAD
 /* Rotate hamburger bars on click*/
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
@@ -124,8 +113,6 @@ NAVBAR
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
-=======
->>>>>>> master
 #wrapper{
 	height: 100%;
 	position: relative;	
@@ -254,7 +241,6 @@ h3.web-tile{
 	margin:0;
 	font-size:2em;
 	height: auto;
-<<<<<<< HEAD
 	color: #000811;
 }
 	
@@ -266,35 +252,14 @@ a.web-tile-link{
 	margin: 1em;
 	padding: 1em;
 	color: #000811;
-=======
-	color: #2e2e2e;
-}
-	
-p.web-tile-text{
-	color: #000000;
-	font-size:1em;
-	}
-a.web-tile-link{
-	/* background-color: #DCE5F1; */
-	margin: 1em;
-	padding: 1em;
-	color: #2e2e2e;
->>>>>>> master
 	font-family: "Montserrat", sans-serif;
 	font-weight: bold;
 	font-size: 0.8em;
 	text-transform: uppercase;
-<<<<<<< HEAD
 	border: 1px solid #000811;
 }
 a.web-tile-link:hover{
 	background-color: #000811;
-=======
-	border: 1px solid #2e2e2e;
-}
-a.web-tile-link:hover{
-	background-color: #2e2e2e;
->>>>>>> master
 	padding: 1.2em;
 	transition: ease-in-out 0.2s;
 	color: #ffffff;
