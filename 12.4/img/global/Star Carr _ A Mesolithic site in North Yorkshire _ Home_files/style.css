@@ -1,0 +1,633 @@
+/* -------------------------
+HTML redefine tags
+------------------------- */
+html{
+	height:100%;
+	width:100%;
+}
+body{
+	padding:0;
+	margin:0;
+	height:100%;
+	width:100%;
+	/* overflow-x: hidden;
+    overflow-y: scroll;
+	/min-width:1050px; */
+	}
+	
+input, form, textarea{
+	
+	}
+
+h1, h2, h3{
+	color:#8B0000;
+	font-family:Roboto, Arial, sans-serif;
+	font-weight:100;
+	}
+	
+h4{
+	color:#118911;
+	font-family:Roboto, Arial, sans-serif;
+	font-weight:100;
+	}
+	
+p{
+	color:#002424;
+	font-family: 'Lora', Georgia, serif;
+	font-size:0.9em;
+	line-height:1.5em;
+	}
+	
+
+a{
+	color:#118911;
+	font-family: 'Lora', Georgia, serif;
+	font-size:1em;
+	line-height:1.5em;
+	}
+
+a:visited{
+	color:#003000;
+}
+	
+
+/*--------------------------
+PAGE STRUCTURE
+------------------------- */
+
+#wrapper{	
+	height:auto;
+	width:auto;
+	margin:0 auto;
+	position:relative;
+}
+
+/* Banner div */
+#banner{
+	height:6em;
+	width:100%;
+	min-width:70em;
+	background-color:#ffffff;
+	/* background-color:#8B0000; */
+	margin:0;
+	position:fixed;
+	top:0;
+	border-bottom:solid 1px #cccccc;
+	box-shadow:0px 2px 2px #cccccc;
+	z-index: 597;
+}
+
+/* Logo image container class */
+.imgLogo{
+	width:150px;
+	height:50px;
+	float:left;
+	margin:1.5em;
+	padding:0 1em 0 1em;
+}
+
+/* Navbar div */
+#navbar{
+	height:2em;
+	width:40em;
+	min-width:360px;
+	top:2em;
+	right:0;
+	padding:0;
+	margin:0 auto;
+	background-color:#ffffff;
+	text-align:center;
+	position:relative;
+	/* box-shadow:0px 5px 5px #000000; */
+}
+
+/* Social media buttons class */
+ul.shareButtons{
+  list-style:none;
+  padding:0;
+  margin:2em 1em 0 0;
+  width:165px;
+  height:32px;
+  float:right;
+ }
+
+/* Use this selector to make buttons line up horizontally */
+ul.shareButtons li{
+	display: inline;
+} 
+
+
+/* Main content div for homepage*/
+#mainContentHomepage{
+	height:auto;
+	width:100%;
+	min-width:50em;
+	top:6em;
+	margin:0 auto;
+	position:relative;
+	text-align:left;
+	display: block;
+	clear: both;
+	overflow: hidden; /* Ensures dynamic column content height stretches to div height */
+}
+
+/* Main content div for content pages*/
+#mainContent{
+	height:auto;
+	width:100%;
+	min-width:50em;
+	top:6em;
+	margin:0 auto;
+	position:relative;
+	display: block;
+	clear: both;
+	overflow: hidden; /* Ensures dynamic column content height stretches to div height */
+}
+
+.textbox{
+	height:auto;
+	width: 50%;
+	position:absolute;
+	top:0;	
+	z-index:500;
+	display: block;
+	left:25%;
+}
+
+.buttonbox{
+	height:auto;
+	position:absolute;
+	background-color:#8B0000;
+	top:5%;	
+	z-index:500;
+	display: block;
+	right:0;
+	text-align:center;
+	line-height:0.8em;
+	padding:0.2em;
+	box-shadow:0px 2px 2px #333333;
+}
+
+
+/* Homepage slideshow div */
+#slideshow {
+    position:relative;
+    width:100%;
+    min-height:600px;
+    overflow: auto;
+}
+
+#slideshow img {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+    width:100%;
+    max-width: 100%;
+    height:auto;
+}
+
+#slideshow img.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow img.last-active {
+    z-index:9;
+}
+
+
+
+/* Image div under banner for content pages */
+#bannerSlide{
+	width:100%;
+	height:100px;
+	background-image:url(images/global/reconstructionBanner.jpg);
+}
+
+/* Column content container div for homepage and other text content pages */
+#columnContent{
+	width:90%;
+	min-width:70em;
+	height:auto;
+	margin:0 auto;
+	padding:0 0 6em 0;
+	position:relative;
+	top:0;
+	/* border:solid 1px #8B0000; */
+	clear:both;
+	overflow: hidden; /* Ensures dynamic column content height stretches to div height */
+}
+
+/* Individual columns on homepage */
+.column1{
+	height:auto;
+	width:30%;
+	position:relative;
+	top:0em;
+	left:0.6em;
+	/* border:1px solid #8B0000; */
+	margin: 0 0.5em;
+	padding:0.5em;
+	float:left;
+
+}
+
+.column2{
+	height:auto;
+	width:30%;
+	position:relative;
+	top:0em;
+	left:0em;
+	/* border:1px solid #8B0000; */
+	margin: 0 0.5em;
+	padding:0.5em;
+	float:left;
+}
+
+.column3{
+	height:auto;
+	width:30%;
+	position:relative;
+	top:0em;
+	left:0em;
+	/* border:1px solid #8B0000; */
+	margin: 0 0.5em;
+	padding:0.5em;
+	float:left;
+}
+
+/* Page content divs */
+
+.pageContentLeft{
+	width:55%;
+	height:auto;
+	margin:1em;
+	padding:0;
+	float:left;
+}
+
+.pageContentRight{
+	width:35%;
+	height:auto;
+	margin: 4.5em 0 0 0;
+	padding:0;
+	float: right;
+}
+
+.newsPageContentLeft{
+	width:48%;
+	height:auto;
+	margin:1em;
+	padding:0;
+	float:left;
+}
+
+.newsPageContentRight{
+	width:48%;
+	height:auto;
+	margin: 4.5em 0 0 0;
+	padding:0;
+	float: right;
+}
+
+h1, h3, h4.pageContent{
+	color: #8B0000;
+	font-family:Roboto, Arial, sans-serif;
+}
+
+h2.pageContent{
+	color: #8B0000;
+	font-family:Roboto, Arial, sans-serif;
+	margin-top:1em;
+}
+
+a.pageContent{
+	color: #3F5F00;
+	font-family:Roboto, Arial, sans-serif;
+	font-weight:lighter;
+}
+
+a.pageContent a:visited{
+	color: #253800;
+	font-family:Roboto, Arial, sans-serif;
+	font-weight:lighter;
+}
+
+img.pageContentRight{
+	width:100%;
+	margin:0;
+	padding:0 0 1em 0;
+}
+
+#galleryContent{
+	width:82%;
+	height:auto;
+	margin:0 auto 2em;
+	padding-bottom:8em;
+}
+
+.gallery1{
+	width:100%;
+	height:auto;
+	margin:0 auto;
+	padding:0;
+}
+
+#videoContent{
+	width:80%;
+	min-width:1100px;
+	height:auto;
+	margin:0 auto;
+	padding-bottom:8em;
+	overflow: hidden; /* To keep floated child elements within the div */
+}
+	
+.videoContentLeft{
+	width:auto;
+	height:auto;
+	margin:0 auto;
+	float:left;
+	padding-bottom:2em;
+	min-width:500px;
+}
+
+.videoContentRight{
+	width:auto;
+	height:auto;
+	margin:0 auto;
+	float:right;
+	padding-bottom:2em;
+	min-width:500px;
+}
+
+/* Links box classes for News page */
+ul.linkBox{
+	width:100%;
+	height:auto;
+	background-color:#ffffff;
+	color:#8B0000;
+	display:block;
+	margin:0 auto;
+	padding:0;
+	list-style-image:none;
+	list-style-type:none;
+}
+
+.linkBox li{
+	margin:0.5em 0;
+	width:100%;
+}
+
+.linkBox li a{
+	margin:0;
+	padding:2em 3em 2em 1em;
+	display:block;
+	width:100%;
+	height:100%;
+	color:#8B0000;
+	background-color: #cccccc;
+	text-decoration:none;
+	font-family:Roboto, Arial, sans-serif;
+	font-weight:lighter;
+	transition: background-color 0.5s ease;
+	position: relative;
+}
+
+.linkBox li a:hover{
+	margin:0;
+	padding:2em 3em 2em 1em;
+	display:block;
+	width:100%;
+	height:100%;
+	color:#ffffff;
+	background-color: #3F5F00;
+}
+
+.linkBox li img{
+	position: absolute;
+	top:30%;
+	right:7em;
+}
+
+
+#footer{
+	height:15em;
+	width:100%;
+	background-color:#8B0000;
+	display:block;
+} 
+
+.footerImg{
+	width:100%;
+	height:100px;
+	margin:0 auto;
+	background-color:#ffffff;
+	padding:3.5em 0 0 0;
+	border-top:1px solid #cccccc;
+	position: absolute;
+    z-index: 9999;
+}
+
+/* Logos in footer */
+ul.footerLogos{
+	 list-style:none;
+	 padding:0;
+	 margin:0 auto;
+	 width:90%;
+	 height:52px;
+
+}
+
+/* Use this selector to make logos line up horizontally */
+ul.footerLogos li{
+	display: inline;
+	margin:0 1em 0 1em;
+} 
+
+/* ----------------------------
+CUSTOM CLASSES
+---------------------------- */
+
+/* Homepage title box heading classes*/
+h1.title{
+	color:#8B0000;
+	font-size:4em;
+	font-family:Roboto, Arial, sans-serif;
+	font-weight:bold;
+	border:2px solid #8B0000;
+	height:auto;
+	width:5.5em;
+	margin:1em auto;
+	padding:0.25em;
+
+}
+
+h2.title{
+	color:#8B0000;
+	font-size:1em;
+	font-family:Roboto, Arial, sans-serif;
+	font-weight:normal;
+	border:0;
+	height:auto;
+	width:20em;
+	margin:-2em auto;
+	padding:0;
+}
+
+h3.columnHeading{
+	color:#8B0000;
+	font-size:2em;
+	font-family:Roboto, Arial, sans-serif;
+	font-weight:normal;
+	border:0;
+	height:auto;
+	width:auto;
+	border:1px solid #8B0000;
+	padding:0.5em;
+	text-align:center;
+}
+
+
+p.homepage{
+	color:#002424;
+	font-family: 'Lora', Georgia, serif;
+	font-size:0.8em;
+}
+
+h4.moreButton{
+	color:#ffffff;
+	font-size:0.75em;
+	font-family:Roboto, Arial, sans-serif;
+	font-weight:lighter;
+	border:2px solid #8B0000;
+	margin:0 auto;
+	padding:0;
+}
+
+p.moreButton{
+	color:#ffffff;
+	font-size:0.5em;
+	font-family:Roboto, Arial, sans-serif;
+	font-weight:lighter;
+	border:2px solid #8B0000;
+	margin:0 auto;
+	padding:0;
+}
+
+#pageBreak{
+	margin-top:-10em;
+	position:absolute;
+}
+
+/* Dropdown menu */	
+ul.dropdown {
+	font-family:Roboto, Arial, sans-serif;
+	font-size:1em;
+	font-weight:300;
+	color:#118911;
+	margin:0;
+	padding:0;
+	float:left;
+	list-style-image:none;
+	list-style-type:none;
+	position:relative;
+	z-index:597;
+}
+	
+ul.dropdown a:link {
+	font-family:Roboto, Arial, sans-serif;
+	font-size:1em;
+	color:#8B0000;
+	text-decoration:none;
+}
+
+ul.dropdown a:visited {
+	font-family:Roboto, Arial, sans-serif;
+	font-size:1em;
+	color:#8B0000;
+	text-decoration:none;
+}
+
+
+.dropdown li ul li {
+	color:#3f5000;
+	float: left; /* These lines get the sub-menu dropdown items to align vertically */
+	clear: left;
+	display: block;
+}
+
+.dropdown li ul li a:hover{
+	color:#118911; /* Changes dropdown sub-menu colour to light green on hover */	
+}
+
+/* Dropdown sub-menu items list */	
+ul.dropdown ul {
+	background-color:#ffffff;
+	font-size:0.8em;
+	margin:0;
+	padding:0;
+	width:18em;
+	list-style-image:none;
+	list-style-type:none;
+	position:absolute;
+	visibility:hidden;
+	z-index:598;
+	left:0.25em;
+	top:100%;
+	box-shadow:0px 2px 2px #333333;
+}
+
+/* Top of sub-menu, e.g. About, Explore */
+ul.dropdown li {
+	line-height:2em;
+	vertical-align:middle;
+	text-align:left;
+	margin:auto;
+	float:left;
+	padding-top:0em;
+	padding-right:1em;
+	padding-bottom:0em;
+	padding-left:1em;
+	list-style-image:none;
+	list-style-type:none;
+	font-size:1em;
+	color:#8B0000;
+}
+
+/* Dropdown sub-menus */	
+ul.dropdown li:hover {
+	color:#8B0000;
+	position:relative;
+	z-index:599;
+}
+
+/* Dropdown menu links hover */	
+ul.dropdown li:hover a{
+	color:#8B0000; /* Coloured red until hover */
+}	
+	
+ul.dropdown li:hover > ul {
+	visibility:visible;
+}
+
+ul.dropdown ul li {
+	border-top-style:none;
+	border-right-style:none;
+	border-bottom-style:none;
+	border-left-style:none;
+}
+
+/* Spacer Classes */
+div.spacer{
+	clear:both; 
+	height:10px; 
+	display:block;
+}
+	
+
+
+/* Paragraph classes */
+
+
