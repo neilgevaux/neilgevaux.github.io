@@ -14,9 +14,10 @@
     <title>neigle - Web Design based in York, UK</title>
 
     <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700,Anton" rel="stylesheet" type="text/css">
+	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- Theme CSS -->
     <link href="css/main.css" rel="stylesheet">
@@ -82,159 +83,13 @@
 </head>
 
 <body>
-<header>
-	<!-- Top banner -->
-		<nav class="topnav" id="topNav">
-			<a href="index.html">Home</a>
-			<a href="#about">About</a>
-			<a href="#projects">Projects</a>
-			<a href="#contact">Contact</a>
-			<a href="javascript:void(0);" class="icon" onclick="navBar()">
-				<div class="hamburger-container" onclick="xBar(this)">
-					<div class="bar1"></div>
-					<div class="bar2"></div>
-					<div class="bar3"></div>
-				</div>
-			</a>
-		</nav>
-</header>
-	<!-- Wrapper div -->
-	<div id="wrapper">
-	
-	<!-- Intro -->
-		<div id="intro"><!-- Intro section, full height image and logo -->
-			<h1 class="intro">Neigle</h1>
-			<h2 class="intro">Web design and archaeological project work</h2>
-			<h3 class="intro">York, UK</h3>
-			<div class="share-buttons"><!-- Social media buttons class -->
-				<a href="https://www.linkedin.com/in/neilgevaux/" target="_blank" title="Linkedin"><span class="fa fa-linkedin fa-fw" aria-hidden="true"></span></a>
-				<a href="https://www.twitter.com/neilgevaux" target="_blank" title="Tweet"><span class="fa fa-twitter fa-fw" aria-hidden="true"></span></a>
-				<a href="https://github.com/neilgevaux" target="_blank" title="Github"><span class="fa fa-github fa-fw" aria-hidden="true"></span></a>
-				<a href="https://www.facebook.com/neilgevaux" title="Share on Facebook" target="_blank"><span class="fa fa-facebook fa-fw" aria-hidden="true"></span></a>
-			</div><!-- End social media buttons class -->
-		</div>
-		
-		<span class="anchor" id="about"></span>
-		
-		<div id="content">
-			<!-- About Section -->
-			
-			<section id="about" class="">
-                <h2>About Neigle</h2>
-                <p>I work at the <a href="http://www.york.ac.uk" alt="The University of York" target="_blank">University of York</a> as the Computing Officer for the <a href="http://www.york.ac.uk/archaeology" alt="Department of Archaeology, University of York" target="_blank">Archaeology Department</a>. I look after the IT for the department, build PCs, and work on archaeological projects like <a href="http://www.starcarr.com" alt="Star Carr, a Mesolithic site in North Yorkshire" target="_blank">Star Carr</a> and <a href="http://www.sicilyintransition.org/" alt="Sicily in Transition-Exploring the Archaeology of Regime Change" target="_blank">Sicily in Transition</a>.</p>
-                <p>I also build websites for projects and businesses. I love front-end web development and UX. Have a look in the <a href="#projects">Projects</a> section to check out some of my work. I'll be adding some examples of artefact photography that I've taken.</p>
-                <p>I'm involved in 3D modelling of objects too. I use photogrammetry to make visualisations of archaeological objects. Check them out at <a href="https://www.sketchfab.com/neilgevaux" target="_blank">Sketchfab</a>. I wrote a manual on the process of creating a model using <a href="http://www.agisoft.com/" alt="Agisoft Photoscan" target="_blank">Agisoft Photoscan</a>.</p>
-			</section>
-		</div>
-		
-		<span class="anchor" id="projects"></span>
-		
-		<!-- Projects Section -->
-		<div id="project-content">
-		<h2>Projects</h2>
-		<h3>Websites</h3>
-			<div class="section group">
-				<div class="col span_1_of_3 matchheight">
-					<div class="web-tile">
-						<h3 class="web-tile">Star Carr</h3>
-						<a href="http://www.starcarr.com/" title="" target="_blank"><img class="web-tile" src="img/websites/website01.jpg"></a>
-						<p class="web-tile-text">Created for 2016 British Archaeological Award-winning project <em>Star Carr</em>.</p>
-						<p><a class="web-tile-link" href="http://www.starcarr.com/" role="button" target="_blank">View live site &raquo;</a></p>
-					</div>
-				</div>
-				<div class="col span_1_of_3 matchheight">
-					<div class="web-tile">
-						<h3 class="web-tile">Sicily In Transition</h3>
-						<a href="http://www.sicilyintransition.org/" title="" target="_blank"><img class="web-tile" src="img/websites/website02.png"></a>
-						<p class="web-tile-text">An archaeological project tracing regime change in Sicily.</p>
-						<p><a class="web-tile-link" href="http://www.sicilyintransition.org/" role="button" target="_blank">View live site &raquo;</a></p>
-					</div>
-				</div>
-				<div class="col span_1_of_3 matchheight">
-					<div class="web-tile">
-						<h3 class="web-tile">Karmilla</h3>
-						<a class="web-tile-text"href="http://www.neigle.com/karmilla/" title="" target="_blank"><img class="web-tile" src="img/websites/website03.jpg"></a>
-						<p class="web-tile-text">Site created for UK-based singer-songwriter <em>Karmilla</em>.</p>
-						<p><a class="web-tile-link" href="http://www.neigle.com/karmilla/" role="button" target="_blank">View live site &raquo;</a></p>
-					</div>
-				</div>
-			</div>
-		</br>
-			<div class="section group">
-				<div class="col span_1_of_3 matchheight">
-					<div class="web-tile">
-						<h3 class="web-tile">Maybank Buildings Conservation</h3>
-						<a href="http://www.maybankbuildingsconservation.co.uk" title="" target="_blank"><img class="web-tile" src="img/websites/website04.jpg"></a>
-						<p class="web-tile-text">Buildings conservation throughout the UK.</p>
-						<p><a class="web-tile-link" href="http://www.maybankbuildingsconservation.co.uk" target="_blank" role="button">View live site &raquo;</a></p>
-					</div>
-				</div>
-				<div class="col span_1_of_3 matchheight">
-					<div class="web-tile">
-						<h3 class="web-tile">Third Lung</h3>
-						<a class="web-tile-text"href="http://www.thirdlungband.com/" title="" target="_blank"><img class="web-tile" src="img/websites/website05.png"></a>
-						<p class="web-tile-text">UK 4-piece band <em>Third Lung</em>.</p>
-						<p><a class="web-tile-link" href="http://thirdlungband.com/" target="_blank" role="button">View live site &raquo;</a></p>
-                    </div>
-				</div>
-				<div class="col span_1_of_3 matchheight">
-					<div class="web-tile">
-						<h3 class="web-tile">INDUCE</h3>
-						<a class="web-tile-text"href="http://induce.earlypottery.org/" title="" target="_blank"><img class="web-tile" src="img/websites/website06.png"></a>
-						<p class="web-tile-text">ERC funded archaeological project about the use of ceramics.</p>
-						<p><a class="web-tile-link" href="http://www.neigle.com/induce/" target="_blank" role="button">View live site &raquo;</a></p>
-                    </div>
-				</div>
-			</div>
-			</br>
-			<div class="section group">
-				<div class="col span_1_of_3 matchheight">
-					<div class="web-tile">
-						<h3 class="web-tile">Internet Archaeology</h3>
-						<a href="https://intarch.ac.uk/" title="Internet Archaeology" target="_blank"><img class="web-tile" src="img/websites/website07.png"></a>
-						<p class="web-tile-text">The digital journal for archaeology.</p>
-						<p><a class="web-tile-link" href="https://intarch.ac.uk/" target="_blank" role="button">View live site &raquo;</a></p>
-					</div>
-				</div>
 
-			</div>
+		<div id="intro">
+			<h1>Neigle has moved to:</h1>
+			<p><a href="https://www.neilgevaux.com/" title="Neil Gevaux- Web design and content creation">neilgevaux.com</a></p>
 		</div>
 		
-		<!-- <h3>Photography</h3> -->
 		
-		<span class="anchor" id="contact"></span>
-		
-		 <!-- Contact Section -->
-		<div id="contact-content">
-			<section id="contact" class="">
-				<h2>Contact Me</h2>
-				<p>Drop me a line if you share any interests, or if you think you have a project you want me to work on.</p>
-				<p><script type="text/javascript">document.write('<a href="mailto:'+first + '@' + last+'">'+first + '@' + last+'<\/a>');</script></a>
-				</p>
-				<ul>
-					<li class="linkbox">
-						<a href="https://www.twitter.com/neilgevaux" class="web-tile-link"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-					</li>
-					<li class="linkbox">
-						<a href="https://www.facebook.com/neilgevaux" class="web-tile-link"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-					</li>
-					<li class="linkbox">
-						<a href="https://www.sketchfab.com/neilgevaux" class="web-tile-link"><i class="fa fa-sketchfab fa-fw"></i> <span class="network-name">Sketchfab</span></a>
-					</li>
-					<li class="linkbox">
-						<a href="https://github.com/neilgevaux" class="web-tile-link"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-					</li>
-				</ul>
-			</section>
-		</div>
-
-		<!-- Footer -->
-		<footer>
-			<div class="footer">
-				<p class="footer">Copyright &copy; Neigle 2018</p>
-			</div>
-		</footer>
-	</div><!-- End wrapper div -->
 	
 </body>
 </html>

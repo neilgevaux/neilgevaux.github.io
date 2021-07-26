@@ -5,281 +5,39 @@ html, body{
 	margin: 0;
 	font-size: 16px;
 	height: 100%;
+	background-color: #fafafa;
 }
 h1,h2,h3,h4,h5,h6{
 	font-family: "Montserrat", sans-serif;
-	color: #000811;
-	text-transform: uppercase;
+	color: #2e2e2e;
+
 }
-h1{
+h1,a{
 	font-size: 3em;
 }
-h2{
-	font-size: 2.5em;
-}
-h3{
-	font-size: 2em;
-}
 p{
-	font-family: "Lora", serif;
-	font-size: 20px;
+	font-family: "Montserrat", sans-serif;
+	color: #2a2a2a;
 	line-height: 2em;
-	color: #000811;
 }
 a{
-	color: #FBA100;
-	text-decoration: none;
+	color: #7E598C;
+	text-decoration: underline;
+	font-weight: bold;
 }
 a:hover{
-	color: #9A6300;
+	color: #643A75;
 }
-ul,li{
-	list-style-type: none;
-	display: inline;
-	font-family: "Lora", serif;
-	font-size: 20px;
-	line-height: 2em;
-	color: #000811;
-}
-header{
-	width: 100%;
-	height: auto;
-	position: fixed;
-	z-index: 999;
-}
-/*-----------------
-NAVBAR
-------------------*/
-.topnav{
-	height: auto;
-	position: fixed;
-	z-index: 999;
-	padding: 2em;
-	width: 100%;
-	transition: 0.8s;
-	box-sizing: border-box; /* This stops padding making the navbar too wide at smaller screen resolutions */
-}
-.topnav.active{
-	background-color: #000811;
-	transition: 0.8s;
-	padding: 1em;
-}
-.topnav.active a{
-	color: #ffffff;
-}
-/* Style the links inside the topnav */
-.topnav a{
-	font-family: "Montserrat", sans-serif;
-	text-transform: uppercase;
-	color: #ffffff;
-	font-weight: 700;
-	text-shadow: 1px 1px #000811;
-	text-decoration: none;
-	margin: 2em 0;
-	padding: 1em;
-}
-/* Change the color of links on hover */
-.topnav a:hover {
-	transition: 0.4s;
-	text-shadow: 1px 1px 1px #000000;
-	position: relative;
-	bottom: 1px;
-}
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-    display: none;
-}
-/* Hamburger menu icon for responsive nav */
-.hamburger-container {
-    display: inline-block;
-    cursor: pointer;
-}
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #ffffff;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-/* Rotate hamburger bars on click*/
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-}
-#wrapper{
-	height: 100%;
-	position: relative;	
-}
-
 #intro{
-	background-image: url("../img/cover-1.jpg");
-	/* Full height */
 	height: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
-}
-h1.intro{
-	font-family: "Montserrat", sans-serif;
-	text-transform: uppercase;
-	color: #ffffff;
-	font-size: 8vw;
-	font-weight: 700;
-	text-shadow: 5px 5px 50px #000000;
-	margin: 0;
-	padding: 0.2em 0;
-	width: 100%;
-	position: absolute;
-	top: 30%;
-	/* background-color: #000811; */
-	transition: 0.5s ease-in-out; /* Makes banner header fade to 0 opacity on page scroll */
-}
-h1.intro.active{
-	opacity: 0;
-}
-h2.intro{
-	font-family: "Lora", serif;
-	text-transform: initial;
-	color: #ffffff;
-	font-size: 2vw;
-	font-weight: 400;
-	text-shadow: 5px 5px 50px #000000;
-	margin: 0;
-	padding: 0.2em 0;
-	width: 100%;
-	position: absolute;
-	top: 60%;
-	/* background-color: #000811; */
-	transition: 0.5s ease-in-out; /* Makes banner header fade to 0 opacity on page scroll */
-}
-h3.intro{
-	font-family: "Lora", serif;
-	text-transform: initial;
-	color: #ffffff;
-	font-size: 1.5vw;
-	font-weight: 400;
-	text-shadow: 5px 5px 50px #000000;
-	margin: 0;
-	padding: 0.2em 0;
-	width: 100%;
-	position: absolute;
-	bottom: 15%;
-	/* background-color: #000811; */
-	transition: 0.5s ease-in-out; /* Makes banner header fade to 0 opacity on page scroll */
-}
-/* Social media buttons */
-.share-buttons{
-	position: absolute;
-	top: 90%;
-	width: 100%;
-	margin: 0 auto;
-}
-.share-buttons a {
-	color: #ffffff;
-	font-size: 3vw;
-}
-.share-buttons a:hover{
-	text-shadow: 1px 1px 1px #000000;
-	position: relative;
-	bottom: 1px;
-}
-/* Styles for main content sections */
-#content{
-	height: auto;
-	width: 100%;
-	margin: 0 auto;
-	padding: 10% 20%;
-	background-color: #fafafa;
-}
-/* Styles for project content section */
-#project-content{
-	height: auto;
-	width: 100%;
-	margin: 0 auto;
-	padding: 10em 0;
-	text-align: center;
-	background-color: #ffffff;
-}
-#contact-content{
-	height: auto;
-	width: 100%;
-	margin: 0 auto;
-	padding: 10%;
-	text-align: center;
-	background-color: #fafafa;
-}
-/* Holders for website portfolio */
-.web-tile{
-	height: 100%;
-	background-color: #eeeeee;
-	margin: 1em;
-	padding:1em;
-	color: #ffffff;
-	font-weight:light;
-	}
-
-img.web-tile{
-	width: 100%;
-	height: 33%;
-	margin: 1em 0;
-	padding: 0;
-	max-width: 320px;
-	}
-
-h3.web-tile{
-	font-weight:normal;
-	margin:0;
-	font-size:2em;
-	height: auto;
-	color: #000811;
-}
-	
-p.web-tile-text{
-	color: #000811;
-	font-size:1em;
-	}
-a.web-tile-link{
-	margin: 1em;
-	padding: 1em;
-	color: #000811;
-	font-family: "Montserrat", sans-serif;
-	font-weight: bold;
-	font-size: 0.8em;
-	text-transform: uppercase;
-	border: 1px solid #000811;
-}
-a.web-tile-link:hover{
-	background-color: #000811;
-	padding: 1.2em;
-	transition: ease-in-out 0.2s;
-	color: #ffffff;
-	box-shadow: 1px 1px 20px #0C2D58;
-}
-
-.footer{
-	background-color: #000811;
-	width:100%;
-	height: 5em;
-	text-align: center;
-	color: #ffffff;
-	font-family: "Montserrat", sans-serif;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-p.footer{
-	padding: 1em 0;
-}
-li.linkbox{
-	display: inline;
-	margin: 2em 0;
 }
